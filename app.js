@@ -16,6 +16,7 @@ const entradaDados = readline.createInterface({
 entradaDados.question('Digite o nome do cliente: ', function(nomeCliente){
     let nome = nomeCliente
 
+    // Validação do nome do cliente
     if(!isNaN(nome)){
         console.log('ERRO: Por favor, digite um nome para o cliente.')
         entradaDados.close()
@@ -27,6 +28,7 @@ entradaDados.question('Digite o nome do cliente: ', function(nomeCliente){
     entradaDados.question('Digite o nome do produto: ', function(nomeProduto){
         let produto = nomeProduto
 
+        // Validação do nome do produto
         if(!isNaN(produto)){
             console.log('ERRO: Por favor, digite um nome para o produto.')
             entradaDados.close()
@@ -38,6 +40,7 @@ entradaDados.question('Digite o nome do cliente: ', function(nomeCliente){
         entradaDados.question('Digite o valor do produto: ', function(valorProduto){
             let valor = valorProduto
 
+            // Validação do valor do produto
             if(isNaN(valor)){
                 console.log('ERRO: Por favor, digite um número para o valor do produto.')
                 entradaDados.close()
@@ -52,6 +55,7 @@ entradaDados.question('Digite o nome do cliente: ', function(nomeCliente){
             entradaDados.question('Digite a taxa de juros: ', function(taxaJuros){
                 let taxa = taxaJuros
 
+                // Validação da taxa de juros
                 if(isNaN(taxa)){
                     console.log('ERRO: Por favor, digite um número para a taxa de juros.')
                     entradaDados.close()
